@@ -1,0 +1,22 @@
+{
+  "name": "test-caret-app",
+  "version": "1.0.0",
+  "description": "test app for use-caret-position",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html --out-dir ./public",
+    "dist": "parcel build index.html --out-dir ./public --no-source-maps"
+  },
+  "author": "jh3y <jh3y@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@svgr/parcel-plugin-svgr": "^5.4.0",
+    "react": "17.0.1",
+    "react-dom": "^17.0.1",
+    "use-caret-position": "^0.0.1"
+  }
+}

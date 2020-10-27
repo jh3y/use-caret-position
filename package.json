@@ -1,0 +1,47 @@
+{
+  "name": "use-caret-position",
+  "version": "0.0.2",
+  "description": "A custom React hook for grabbing the caret position in an input field",
+  "main": "dist/use-caret-position.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "rollup --config rollup.config.js",
+    "dev": "rollup --config rollup.config.js -w",
+    "prepublish": "rollup --config rollup.config.js",
+    "prepack": "rollup --config rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jh3y/use-caret-position.git"
+  },
+  "keywords": [
+    "caret",
+    "input",
+    "react",
+    "hook",
+    "custom",
+    "position",
+    "css",
+    "layout",
+    "cursor"
+  ],
+  "author": "jh3y <users@noreply.github.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/jh3y/use-caret-position/issues"
+  },
+  "homepage": "https://github.com/jh3y/use-caret-position#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "rollup": "^2.32.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {}
+}
