@@ -24,8 +24,12 @@ import useCaretPosition from 'use-caret-position'
 ```javascript
 const { x, y, getPosition, getSelection } = useCaretPosition(inputRef)
 ```
+```javascript
+<input type="text" ref="inputRef" onInput{() => getPosition(inputRef)} />
+<span style={{ "--x": x, "--y": y }}>I'm the marker</span>
+```
 
-You get an `x` and `y` coordinate that you can use to display a marker with. I'd recommend using CSS variables for this. This is what the demos do. `getPosition` and `getSelection` are functions you can trigger whenever needed to update the `x` and `y` positions.
+You get an `x` and `y` coordinate that you can use to display a marker with. I'd recommend using CSS variables for this. This is what the demos do. `getPosition` and `getSelection` are functions __you can trigger whenever you need to update__ the `x` and `y` positions.
 
 `getPosition` returns the position at `selectionStart` for an input. `getSelection` returns a midpoint between `selectionStart` and `selectionEnd` for an input. It's tricky to provide an exact accurate `x` and `y` for the caret in all scenarios so often you might need to adjust the positioning slightly with CSS transforms.
 

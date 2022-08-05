@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect, Fragment } from 'react'
-import { render } from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import useCaretPosition from 'use-caret-position'
 import GithubIcon from './github.svg'
 
@@ -51,6 +51,8 @@ const App = () => {
       getPositionTrigger(triggerRef)
     }
   }, [])
+
+  console.info({ basicX, basicY })
 
   return (
     <Fragment>
@@ -145,4 +147,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque 
   )
 }
 
-render(<App />, document.querySelector('#root'))
+const ROOT = document.querySelector('#root')
+const REACT_ROOT = createRoot(ROOT)
+REACT_ROOT.render(<App />)
